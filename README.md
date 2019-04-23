@@ -29,8 +29,8 @@ module.exports = {
 
 [npm-image]: https://img.shields.io/npm/v/@magic-themes/docs.svg
 [npm-url]: https://www.npmjs.com/package/@magic-themes/docs
-[travis-image]: https://api.travis-ci.org/magic-themes/docs.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-themes/docs
+[travis-image]: https://api.travis-ci.com/magic-themes/docs.svg?branch=master
+[travis-url]: https://travis-ci.com/magic-themes/docs
 [appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/docs/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/jaeh/docs/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-themes/docs/badge.svg
