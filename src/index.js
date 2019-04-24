@@ -63,10 +63,20 @@ const theme = {
       width: 'auto',
       position: 'fixed',
       float: 'left',
+      maxHeight: '100vh',
+      height: '100vh',
+      overflowY: 'auto',
+      overflowX: 'hidden',
+      scrollbarWidth: 'thin',
+      boxSizing: 'border-box',
+      width: '210px',
     },
+
     '.Menu': {
-      width: '200px',
+      maxWidth: '210px',
+      padding: '0 0 2em',
     },
+
     '.page': {
       float: 'right',
       width: 'calc(100% - 220px)',
