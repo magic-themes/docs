@@ -70,6 +70,7 @@ const theme = {
     '.page': {
       float: 'right',
       width: 'calc(100% - 220px)',
+      minHeight: '90vh',
     },
     'footer.main': {
       clear: 'both',
