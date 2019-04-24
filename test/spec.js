@@ -7,5 +7,9 @@ module.exports = [
   { fn: () => docs, expect: is.object, info: 'theme is an object' },
   { fn: () => css(docs), expect: is.object, info: 'theme can be parsed by css lib' },
   { fn: () => css.stringify(docs), expect: is.string, info: 'theme can be parsed by css lib' },
-  { fn: () => css.stringify(docs), expect: t => t.includes('.Menu'), info: 'theme contains at least a .Menu style' },
+  {
+    fn: () => css.stringify(docs),
+    expect: t => t.includes('.Menu'),
+    info: 'theme contains at least a .Menu style',
+  },
 ]
