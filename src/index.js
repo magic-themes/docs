@@ -31,7 +31,7 @@ const theme = {
   h4: {
     fontSize: '1.1em',
   },
-  h5: {
+  'h2, h3, h4, h5': {
     fontWeight: 600,
   },
 
