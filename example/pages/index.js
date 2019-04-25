@@ -7,15 +7,19 @@ module.exports = () =>
       ' docs theme. It is being used as the documentation theme for most @magic packages.',
     ]),
 
-    h2('installation:'),
-    p(
-      'installation is done using npm. for now, all magic themes are living on github and not on npm.',
-    ),
+
+    h3({ id: 'installation' }, 'installation'),
+    p([
+      'installation is done using npm.',
+      ' for now, all magic themes live github and not on npm.',
+    ]),
     p('note the missing @ before magic-themes.'),
     p('this is how we install npm modules from github.'),
     Pre.View(`npm install magic-themes/docs`),
 
-    h2('require in config.js:'),
+    h2({ id: 'usage' }, 'usage'),
+
+    h3({ id: 'usage-require' }, 'require in config.js:'),
 
     Pre.View(`
 // config.js
@@ -25,5 +29,17 @@ module.exports = {
   THEME: 'docs',
 }`),
 
-    p('magic will then find the theme automatically, just as it did on this page'),
+    h3({ id: 'usage-customize' }, 'customize / overwrite'),
+    p('you can customize and add any kind of style'),
+    p('create /assets/themes/docs/index.js, any css there will overwrite the theme css'),
+
+    Pre.View(`
+// /assets/themes/docs/index.js
+module.exports = {
+  body: {
+    color: 'orange',
+  },
+}`),
+
+    p('magic will then find and merge the themes automatically, just as it did on this page'),
   ])
