@@ -35,6 +35,12 @@ const theme = {
     fontWeight: 600,
   },
 
+  'header.main': {
+    '.logo-text': {
+      fontSize: '1.1em',
+    },
+  },
+
   '.Menu': {
     display: 'block',
     float: 'none',
