@@ -3,6 +3,10 @@ const theme = {
     maxWidth: '1300px',
   },
 
+  ':target': {
+    textDecoration: 'underline',
+  },
+
   a: {
     textDecoration: 'none',
     color: 'blue',
