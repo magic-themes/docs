@@ -35,6 +35,10 @@ const theme = {
     fontWeight: 600,
   },
 
+  p: {
+    lineHeight: '1.8',
+  },
+
   'header.main': {
     '.logo-text': {
       fontSize: '1.1em',
