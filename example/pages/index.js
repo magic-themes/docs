@@ -15,13 +15,13 @@ module.exports = () =>
     ]),
     p('note the missing @ before magic-themes.'),
     p('this is how we install npm modules from github.'),
-    Pre.View(`npm install magic-themes/docs`),
+    Pre(`npm install magic-themes/docs`),
 
     h2({ id: 'usage' }, 'usage'),
 
     h3({ id: 'usage-require' }, 'require in config.js:'),
 
-    Pre.View(`
+    Pre(`
 // config.js
 
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
     p('you can customize and add any kind of style'),
     p('create /assets/themes/docs/index.js, any css there will overwrite the theme css'),
 
-    Pre.View(`
+    Pre(`
 // /assets/themes/docs/index.js
 module.exports = {
   body: {
