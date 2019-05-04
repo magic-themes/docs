@@ -13,8 +13,8 @@ the [@magic](https://github.com/magic/core) documentation theme. shared between 
 [npm-url]: https://www.npmjs.com/package/@magic-themes/docs
 [travis-image]: https://api.travis-ci.org/magic-themes/docs.svg?branch=master
 [travis-url]: https://travis-ci.org/magic-themes/docs
-[appveyor-image]: https://img.shields.io/appveyor/ci/jaeh/docs/master.svg
-[appveyor-url]: https://ci.appveyor.com/project/jaeh/core/branch/master
+[appveyor-image]: https://img.shields.io/appveyor/ci/magicthemes/docs/master.svg
+[appveyor-url]: https://ci.appveyor.com/project/magicthemes/docs/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-themes/docs/badge.svg
 [coveralls-url]: https://coveralls.io/github/magic-themes/docs
 [greenkeeper-image]: https://badges.greenkeeper.io/magic-themes/docs.svg
