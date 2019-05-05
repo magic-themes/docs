@@ -50,11 +50,6 @@ const theme = {
     float: 'none',
     clear: 'both',
 
-    li: {
-      display: 'block',
-      float: 'none',
-    },
-
     ul: {
       ul: {
         position: 'relative',
@@ -62,12 +57,17 @@ const theme = {
       },
     },
 
-    'li.active': {
-      '> a': {
-        textDecoration: 'underline',
-      },
-      'li a': {
-        textDecoration: 'none',
+    '.MenuItem': {
+      display: 'block',
+      float: 'none',
+
+      '&.active': {
+        '> a': {
+          textDecoration: 'underline',
+        },
+        '.MenuItem a': {
+          textDecoration: 'none',
+        },
       },
     },
   },
