@@ -3,8 +3,15 @@ const theme = {
     maxWidth: '1300px',
   },
 
-  'h2:target, :target h2': {
-    textDecoration: 'underline',
+  'h1, h2, h3': {
+    '&:target': {
+      textDecoration: 'underline',
+    },
+  },
+  ':target': {
+    'h1, h2, h3': {
+      textDecoration: 'underline',
+    },
   },
 
   a: {
