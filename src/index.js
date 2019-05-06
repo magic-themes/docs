@@ -3,7 +3,7 @@ const theme = {
     maxWidth: '1300px',
   },
 
-  ':target': {
+  'h2:target, :target h2': {
     textDecoration: 'underline',
   },
 
