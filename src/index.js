@@ -52,8 +52,6 @@ const theme = {
   '.Header': {
     '.Logo': {
       margin: '0.3em 0 0',
-      height: '40px',
-      width: '40px',
     },
 
     '.LogoText': {
