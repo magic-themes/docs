@@ -25,7 +25,7 @@ const theme = {
       color: 'orange',
     },
   },
-  '.page': {
+  '.Page': {
     marginBottom: '3em',
   },
 
@@ -49,8 +49,14 @@ const theme = {
     lineHeight: '1.8',
   },
 
-  'header.main': {
-    '.logo-text': {
+  '.Header': {
+    '.Logo': {
+      margin: '0.3em 0 0',
+      height: '40px',
+      width: '40px',
+    },
+
+    '.LogoText': {
       fontSize: '1.1em',
     },
   },
@@ -83,7 +89,7 @@ const theme = {
   },
 
   '@media screen and (min-width: 1000px)': {
-    'header.main': {
+    '.Header': {
       width: 'auto',
       position: 'fixed',
       float: 'left',
@@ -101,12 +107,12 @@ const theme = {
       padding: '0 0 2em',
     },
 
-    '.page': {
+    '.Page': {
       float: 'right',
       width: 'calc(100% - 220px)',
       minHeight: '90vh',
     },
-    'footer.main': {
+    '.Footer': {
       clear: 'both',
     },
   },
