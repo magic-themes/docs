@@ -4,8 +4,8 @@ module.exports = {
     menu: [
       { to: '/#installation', text: 'installation' },
       { to: '/#usage', text: 'usage', items: [
-        { to: '/#usage-require', text: 'require' },
-        { to: '/#usage-customize', text: 'customize' },
+        { to: '-require', text: 'require' },
+        { to: '-customize', text: 'customize' },
       ]},
     ],
   },
