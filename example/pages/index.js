@@ -9,12 +9,6 @@ module.exports = () =>
 
 
     h3({ id: 'installation' }, 'installation'),
-    p([
-      'installation is done using npm.',
-      ' for now, all magic themes live github and not on npm.',
-    ]),
-    p('note the missing @ before magic-themes.'),
-    p('this is how we install npm modules from github.'),
     Pre(`npm install magic-themes/docs`),
 
     h2({ id: 'usage' }, 'usage'),
@@ -35,6 +29,7 @@ module.exports = {
 
     Pre(`
 // /assets/themes/docs/index.js
+
 module.exports = {
   body: {
     color: 'orange',
