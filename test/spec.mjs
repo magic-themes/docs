@@ -1,9 +1,9 @@
-const { is } = require('@magic/test')
-const docs = require('../src')
+import { is } from '@magic/test'
+import docs from '../src/index.mjs'
 
-const css = require('@magic/css')
+import css from '@magic/css'
 
-module.exports = [
+export default [
   { fn: () => docs, expect: is.object, info: 'theme is an object' },
   { fn: () => css(docs), expect: is.object, info: 'theme can be parsed by css lib' },
   { fn: () => css.stringify(docs), expect: is.string, info: 'theme can be parsed by css lib' },
