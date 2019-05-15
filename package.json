@@ -1,10 +1,13 @@
 {
   "name": "@magic-themes/docs",
   "version": "0.0.1",
-  "main": "src/index.js",
-  "files": [
-    "src"
-  ],
+  "author": "Wizards & Witches",
+  "description": "this is the default documentation theme for @magic",
+  "license": "AGPL-3.0",
+  "homepage": "https://magic-themes.github.io/docs",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -18,16 +21,21 @@
     "type": "git",
     "url": "git+https://github.com/magic-themes/docs.git"
   },
-  "keywords": [],
-  "author": "Jascha Ehrenreich <jascha@jaeh.at>",
-  "license": "AGPL-3.0",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "magic",
+    "magic-themes",
+    "docs"
+  ],
   "bugs": {
     "url": "https://github.com/magic-themes/docs/issues"
   },
-  "homepage": "https://github.com/magic-themes/docs#readme",
   "devDependencies": {
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.1.0"
+    "@magic/css": "0.5.0",
+    "@magic/test": "0.1.1"
   }
 }
