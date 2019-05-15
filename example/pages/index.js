@@ -7,7 +7,6 @@ module.exports = () =>
       ' docs theme. It is being used as the documentation theme for most @magic packages.',
     ]),
 
-
     h3({ id: 'installation' }, 'installation'),
     Pre(`npm install magic-themes/docs`),
 
