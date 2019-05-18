@@ -66,8 +66,11 @@ const theme = {
 
     ul: {
       ul: {
+        borderLeft: '1px dotted blue',
+        display: 'block',
+        margin: '0 0 0 0.2em',
+        padding: '0 0 0 0.3em',
         position: 'relative',
-        margin: '0 0 0 0.5em',
       },
     },
 
