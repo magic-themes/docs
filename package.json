@@ -5,9 +5,9 @@
   "description": "this is the default documentation theme for @magic",
   "license": "AGPL-3.0",
   "homepage": "https://magic-themes.github.io/docs",
-  "main": "src/index.mjs",
-  "module": "src/index.mjs",
-  "type": "module",
+  "engines": {
+    "node": ">=12.2.0"
+  },
   "scripts": {
     "start": "t -p",
     "format": "f -w --exclude docs",
@@ -21,6 +21,9 @@
     "type": "git",
     "url": "git+https://github.com/magic-themes/docs.git"
   },
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
   "files": [
     "src"
   ],
