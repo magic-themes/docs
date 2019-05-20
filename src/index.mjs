@@ -1,4 +1,4 @@
-const theme = {
+export default {
   '#magic': {
     maxWidth: '1300px',
   },
@@ -118,5 +118,3 @@ const theme = {
     },
   },
 }
-
-export default theme
