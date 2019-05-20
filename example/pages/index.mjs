@@ -1,4 +1,4 @@
-module.exports = () =>
+export const View = () =>
   div([
     h1('@magic-themes/docs'),
     p([
@@ -15,9 +15,9 @@ module.exports = () =>
     h3({ id: 'usage-require' }, 'require in config.js:'),
 
     Pre(`
-// config.js
+// config.mjs
 
-module.exports = {
+export default {
   // ... other config
   THEME: 'docs',
 }`),
@@ -27,9 +27,9 @@ module.exports = {
     p('create /assets/themes/docs/index.js, any css there will overwrite the theme css'),
 
     Pre(`
-// /assets/themes/docs/index.js
+// /assets/themes/docs/index.mjs
 
-module.exports = {
+export default {
   body: {
     color: 'orange',
   },
