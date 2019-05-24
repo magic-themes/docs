@@ -39,6 +39,6 @@
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic/core": "github:magic/core",
     "@magic/css": "0.7.0",
-    "@magic/test": "0.1.6"
+    "@magic/test": "0.1.8"
   }
 }
