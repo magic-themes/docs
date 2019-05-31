@@ -1,5 +1,5 @@
 export default {
-  '#magic': {
+  '#Magic': {
     maxWidth: '1300px',
   },
 
