@@ -2,9 +2,12 @@
   "name": "@magic-themes/docs",
   "version": "0.0.1",
   "author": "Wizards & Witches",
-  "description": "this is the default documentation theme for @magic",
-  "license": "AGPL-3.0",
   "homepage": "https://magic-themes.github.io/docs",
+  "license": "AGPL-3.0",
+  "description": "this is the default documentation theme for @magic",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
   "engines": {
     "node": ">=12.2.0"
   },
@@ -17,28 +20,32 @@
     "dev": "magic dev --watch src",
     "calls": "calls"
   },
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/magic-themes/docs.git"
   },
-  "main": "src/index.mjs",
-  "module": "src/index.mjs",
-  "type": "module",
-  "files": [
-    "src"
-  ],
+  "bugs": {
+    "url": "https://github.com/magic-themes/docs/issues"
+  },
+  "devDependencies": {
+    "@magic-modules/light-switch": "github:magic-modules/light-switch",
+    "@magic-modules/pre": "github:magic-modules/pre",
+    "@magic/core": "github:magic/core",
+    "@magic/css": "0.7.0",
+    "@magic/test": "0.1.9"
+  },
   "keywords": [
     "magic",
     "magic-themes",
     "docs"
   ],
-  "bugs": {
-    "url": "https://github.com/magic-themes/docs/issues"
-  },
-  "devDependencies": {
-    "@magic-modules/pre": "github:magic-modules/pre",
-    "@magic/core": "github:magic/core",
-    "@magic/css": "0.7.0",
-    "@magic/test": "0.1.9"
-  }
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    }
+  ]
 }
