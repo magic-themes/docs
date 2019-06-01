@@ -1,6 +1,14 @@
-export default {
+export default (vars = {}) => ({
   '#Magic': {
+    backgroundColor: vars.backgroundColor || '#232323',
+    color: vars.textColor || '#eee',
     maxWidth: '1300px',
+    transition: 'color 300ms, background-color 300ms',
+
+    '&.light': {
+      backgroundColor: vars.backgroundColorLight || '#eee',
+      color: vars.textColorLight || '#232323'
+    },
   },
 
   'h1, h2, h3, h4, h5': {
@@ -19,12 +27,22 @@ export default {
 
   a: {
     textDecoration: 'none',
-    color: 'blue',
+    color: vars.linkColor || '#999',
 
     '&:hover': {
-      color: 'orange',
+      color: vars.linkColorHover || '#ddd',
+      textDecoration: 'underline',
+    },
+
+    '.light&&': {
+      color: vars.linkColorLight || '#333',
+
+      '&:hover': {
+        color: vars.linkColorLightHover || '#555',
+      },
     },
   },
+
   '.Page': {
     marginBottom: '3em',
   },
@@ -117,4 +135,4 @@ export default {
       clear: 'both',
     },
   },
-}
+})
