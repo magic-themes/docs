@@ -38,7 +38,7 @@ export default (vars = {}) => {
 
     a: {
       color: linkColor,
-      textDecoration: 'none',
+      textDecoration: 'underline',
       transition: 'box-shadow 500ms, color 500ms',
 
       '&:hover': {
@@ -106,6 +106,10 @@ export default (vars = {}) => {
       '.MenuItem': {
         display: 'block',
         float: 'none',
+
+        a: {
+          textDecoration: 'none',
+        },
 
         '&.active': {
           '> a': {
