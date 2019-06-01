@@ -84,7 +84,7 @@ export default (vars = {}) => ({
 
     ul: {
       ul: {
-        borderLeft: '1px dotted blue',
+        borderLeft: '1px dotted',
         display: 'block',
         margin: '0 0 0 0.2em',
         padding: '0 0 0 0.3em',
