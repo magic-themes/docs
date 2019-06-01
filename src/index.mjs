@@ -156,7 +156,7 @@ export default (vars = {}) => {
       '.Page': {
         float: 'right',
         width: 'calc(100% - 220px)',
-        minHeight: '90vh',
+        minHeight: '83vh',
       },
       '.Footer': {
         clear: 'both',
