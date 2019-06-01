@@ -15,6 +15,7 @@ export default (vars = {}) => {
       backgroundColor,
       color: textColor,
       transition: 'color 300ms, background-color 300ms',
+      minHeight: '100vh',
 
       '&.light': {
         backgroundColor: backgroundColorLight,
