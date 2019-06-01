@@ -1,4 +1,4 @@
-export const View = () =>
+export const View = state =>
   div([
     h1('@magic-themes/docs'),
     p([
@@ -36,4 +36,6 @@ export default {
 }`),
 
     p('magic will then find and merge the themes automatically, just as it did on this page'),
+
+    LightSwitch(state),
   ])
