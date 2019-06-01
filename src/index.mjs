@@ -127,6 +127,13 @@ export default (vars = {}) => {
       },
     },
 
+    '.LightSwitch': {
+      left: 'auto',
+      position: 'fixed',
+      right: '0.5em',
+      top: '0.5em',
+    },
+
     '@media screen and (min-width: 1000px)': {
       '.Header': {
         width: 'auto',
