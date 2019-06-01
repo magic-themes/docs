@@ -27,7 +27,7 @@ export default (vars = {}) => ({
 
   a: {
     textDecoration: 'none',
-    color: vars.linkColor || '#999',
+    color: vars.linkColor || '#ccc',
 
     '&:hover': {
       color: vars.linkColorHover || '#ddd',
