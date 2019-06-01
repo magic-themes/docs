@@ -115,6 +115,10 @@ export default (vars = {}) => {
           '> a': {
             textDecoration: 'underline',
             color: linkColorHover,
+
+            '.light&&': {
+              color: linkColorLightHover,
+            },
           },
           '.MenuItem a': {
             textDecoration: 'none',
