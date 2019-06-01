@@ -2,7 +2,6 @@ export default (vars = {}) => ({
   '#Magic': {
     backgroundColor: vars.backgroundColor || '#232323',
     color: vars.textColor || '#eee',
-    maxWidth: '1300px',
     transition: 'color 300ms, background-color 300ms',
 
     '&.light': {
