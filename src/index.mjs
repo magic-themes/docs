@@ -81,11 +81,13 @@ export default (vars = {}) => {
 
     '.Header': {
       '.Logo': {
-        margin: '0.3em 0 0',
-      },
+        img: {
+          margin: '0.3em 0 0',
+        },
 
-      '.LogoText': {
-        fontSize: '1.1em',
+        span: {
+          fontSize: '1.1em',
+        },
       },
     },
 
@@ -104,7 +106,7 @@ export default (vars = {}) => {
         },
       },
 
-      '.MenuItem': {
+      li: {
         display: 'block',
         float: 'none',
 
@@ -121,8 +123,10 @@ export default (vars = {}) => {
               color: linkColorLightHover,
             },
           },
-          '.MenuItem a': {
-            textDecoration: 'none',
+          li: {
+            a: {
+              textDecoration: 'none',
+            },
           },
         },
       },
