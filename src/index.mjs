@@ -16,6 +16,7 @@ export default (vars = {}) => {
       color: textColor,
       transition: 'color 300ms, background-color 300ms',
       minHeight: '100vh',
+      fontWeight: 400,
 
       '&.light': {
         backgroundColor: backgroundColorLight,
@@ -70,9 +71,6 @@ export default (vars = {}) => {
     },
     h4: {
       fontSize: '1.1em',
-    },
-    'h2, h3, h4, h5': {
-      fontWeight: 600,
     },
 
     p: {
