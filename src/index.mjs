@@ -41,7 +41,7 @@ export default (vars = {}) => {
     a: {
       color: linkColor,
       textDecoration: 'underline',
-      transition: 'box-shadow 500ms, color 500ms',
+      transition: 'color 500ms',
 
       '&:hover': {
         color: linkColorHover,
