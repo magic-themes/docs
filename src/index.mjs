@@ -11,6 +11,17 @@ export default (vars = {}) => {
   } = vars
 
   return {
+    body: {
+      fontFamily: [
+        '"Ubuntu Narrow"',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        'Helvetica',
+        'sans-serif',
+      ].join(', '),
+    },
     '#Magic': {
       backgroundColor,
       color: textColor,
