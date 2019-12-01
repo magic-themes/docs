@@ -11,8 +11,8 @@ the [@magic](https://github.com/magic/core) documentation theme. shared between 
 
 [npm-image]: https://img.shields.io/npm/v/@magic-themes/docs.svg
 [npm-url]: https://www.npmjs.com/package/@magic-themes/docs
-[travis-image]: https://api.travis-ci.org/magic-themes/docs.svg?branch=master
-[travis-url]: https://travis-ci.org/magic-themes/docs
+[travis-image]: https://img.shields.io/travis/com/magic-themes/docs/master
+[travis-url]: https://travis-ci.com/magic-themes/docs
 [appveyor-image]: https://img.shields.io/appveyor/ci/magicthemes/docs/master.svg
 [appveyor-url]: https://ci.appveyor.com/project/magicthemes/docs/branch/master
 [coveralls-image]: https://coveralls.io/repos/github/magic-themes/docs/badge.svg
