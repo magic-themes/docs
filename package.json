@@ -34,7 +34,7 @@
     "@magic-modules/light-switch": "github:magic-modules/light-switch",
     "@magic-modules/pre": "github:magic-modules/pre",
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.1.21"
+    "@magic/test": "0.1.22"
   },
   "keywords": [
     "magic",
