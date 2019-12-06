@@ -53,3 +53,10 @@ module.exports = {
 ```
 
 @magic will then import and use the theme automagically.
+
+#### changelog
+##### 0.0.1
+first release
+
+##### 0.0.2
+use @magic npm packages instead of github
