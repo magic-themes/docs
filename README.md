@@ -1,6 +1,7 @@
 ## @magic-themes/docs
 
-the [@magic](https://github.com/magic/core) documentation theme. shared between all @magic documentation pages
+the [@magic](https://github.com/magic/core) documentation theme. 
+shared between all @magic documentation pages
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
@@ -24,35 +25,38 @@ the [@magic](https://github.com/magic/core) documentation theme. shared between 
 
 #### install:
 ```bash
-npm install --save magic-themes/docs
+npm install --save --save-exact @magic-themes/docs
 ```
 
 #### usage:
 
 ##### import:
 ```javascript
-// config.js:
+// config.mjs:
 
-module.exports = {
+export default {
   //... other config
   THEME: 'docs',
-}
-```
 
-##### overwrite
-you can overwrite any style.
-
-create /assets/themes/docs/index.js, any css there will overwrite the theme css
-
-```javascript
-module.exports = {
-  body: {
-    color: 'orange',
-  },
+  // multiple themes
+  // THEME: [...other themes, 'example']
 }
 ```
 
 @magic will then import and use the theme automagically.
+
+##### overwrite
+you can overwrite any style in this theme.
+
+create /assets/themes/docs/index.js, any css there will overwrite the theme css
+
+```javascript
+export default vars => ({
+  body: {
+    color: vars.colors.orange[500],
+  },
+})
+```
 
 #### changelog
 ##### 0.0.1
@@ -60,3 +64,9 @@ first release
 
 ##### 0.0.2
 use @magic npm packages instead of github
+
+##### 0.0.3
+update README
+
+##### 0.0.4 - unreleased
+...
