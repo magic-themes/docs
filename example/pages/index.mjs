@@ -8,11 +8,11 @@ export const View = state =>
     ]),
 
     h3({ id: 'installation' }, 'installation'),
-    Pre(`npm install magic-themes/docs`),
+    Pre(`npm install --save --save-exact @magic-themes/docs`),
 
     h2({ id: 'usage' }, 'usage'),
 
-    h3({ id: 'usage-require' }, 'require in config.js:'),
+    h3({ id: 'usage-require' }, 'require in config.mjs:'),
 
     Pre(`
 // config.mjs
@@ -24,18 +24,16 @@ export default {
 
     h3({ id: 'usage-customize' }, 'customize / overwrite'),
     p('you can customize and add any kind of style'),
-    p('create /assets/themes/docs/index.js, any css there will overwrite the theme css'),
+    p('create /assets/themes/docs/index.mjs, any css there will overwrite the theme css'),
 
     Pre(`
 // /assets/themes/docs/index.mjs
 
-export default {
+export default vars => ({
   body: {
-    color: 'orange',
+    color: vars.colors.orange[900],
   },
 }`),
 
     p('magic will then find and merge the themes automatically, just as it did on this page'),
-
-    LightSwitch(state),
   ])
