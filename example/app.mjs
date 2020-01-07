@@ -5,7 +5,10 @@ export const state = {
     {
       to: '/#usage',
       text: 'usage',
-      items: [{ to: '-require', text: 'require' }, { to: '-customize', text: 'customize' }],
+      items: [
+        { to: '-require', text: 'require' },
+        { to: '-customize', text: 'customize' },
+      ],
     },
   ],
 }
