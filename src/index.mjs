@@ -22,6 +22,7 @@ export default (vars = {}) => {
         'sans-serif',
       ].join(', '),
     },
+
     '#Magic': {
       backgroundColor,
       color: textColor,
