@@ -1,6 +1,6 @@
 ## @magic-themes/docs
 
-the [@magic](https://github.com/magic/core) documentation theme. 
+the [@magic](https://github.com/magic/core) documentation theme.
 shared between all @magic documentation pages
 
 [![NPM version][npm-image]][npm-url]
@@ -68,5 +68,8 @@ use @magic npm packages instead of github
 ##### 0.0.3
 update README
 
-##### 0.0.4 - unreleased
+##### 0.0.4
+set node version to 13.5.0 and engineStrict
+
+##### 0.0.5 - unreleased
 ...
