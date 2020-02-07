@@ -71,5 +71,8 @@ update README
 ##### 0.0.4
 set node version to 13.5.0 and engineStrict
 
-##### 0.0.5 - unreleased
+##### 0.0.5
+export vars from theme to merge with THEME_VARS before rendering modules.
+
+##### 0.0.6 - unreleased
 ...
