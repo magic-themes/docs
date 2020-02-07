@@ -1,14 +1,16 @@
-export default (vars = {}) => {
-  const {
-    backgroundColor = '#232323',
-    backgroundColorLight = '#EEEEEE',
-    textColor = '#CCCCCC',
-    textColorLight = '#232323',
-    linkColor = '#EEEEEE',
-    linkColorHover = '#FEFEFE',
-    linkColorLight = '#010101',
-    linkColorLightHover = '#010101',
-  } = vars
+export const vars = {
+  backgroundColor: '#232323',
+  backgroundColorLight: '#EEEEEE',
+  textColor: '#CCCCCC',
+  textColorLight: '#232323',
+  linkColor: '#EEEEEE',
+  linkColorHover: '#FEFEFE',
+  linkColorLight: '#010101',
+  linkColorLightHover: '#010101',
+}
+
+export default (v = {}) => {
+  v = { ...vars, ...v }
 
   return {
     body: {
@@ -24,15 +26,15 @@ export default (vars = {}) => {
     },
 
     '#Magic': {
-      backgroundColor,
-      color: textColor,
+      backgroundColor: v.backgroundColor,
+      color: v.textColor,
       transition: 'color 300ms, background-color 300ms',
       minHeight: '100vh',
       fontWeight: 400,
 
       '&.light': {
-        backgroundColor: backgroundColorLight,
-        color: textColorLight,
+        backgroundColor: v.backgroundColorLight,
+        color: v.textColorLight,
       },
     },
 
@@ -51,19 +53,19 @@ export default (vars = {}) => {
     },
 
     a: {
-      color: linkColor,
+      color: v.linkColor,
       textDecoration: 'underline',
       transition: 'color 500ms',
 
       '&:hover': {
-        color: linkColorHover,
+        color: v.linkColorHover,
       },
 
       '.light&&': {
-        color: linkColorLight,
+        color: v.linkColorLight,
 
         '&:hover': {
-          color: linkColorLightHover,
+          color: v.linkColorLightHover,
         },
       },
     },
@@ -127,10 +129,10 @@ export default (vars = {}) => {
         '&.active': {
           '> a': {
             textDecoration: 'underline',
-            color: linkColorHover,
+            color: v.linkColorHover,
 
             '.light&&': {
-              color: linkColorLightHover,
+              color: v.linkColorLightHover,
             },
           },
           li: {
