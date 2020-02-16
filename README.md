@@ -74,5 +74,8 @@ set node version to 13.5.0 and engineStrict
 ##### 0.0.5
 export vars from theme to merge with THEME_VARS before rendering modules.
 
-##### 0.0.6 - unreleased
+##### 0.0.6
+theme vars are now named according to @magic standard (which is in flux...)
+
+##### 0.0.7 - unreleased
 ...
