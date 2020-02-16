@@ -1,12 +1,21 @@
 export const vars = {
-  backgroundColor: '#232323',
-  backgroundColorLight: '#EEEEEE',
-  textColor: '#CCCCCC',
-  textColorLight: '#232323',
-  linkColor: '#EEEEEE',
-  linkColorHover: '#FEFEFE',
-  linkColorLight: '#010101',
-  linkColorLightHover: '#010101',
+  background: {
+    dark: '#232323',
+    light: '#eeeeee',
+  },
+  text: {
+    dark: '#cccccc',
+    light: '#232323',
+  },
+  link: {
+    dark: '#eeeeee',
+    light: '#232323',
+
+    hover: {
+      dark: '#fefefe',
+      light: '#232323',
+    },
+  },
 }
 
 export default (v = {}) => {
@@ -26,15 +35,15 @@ export default (v = {}) => {
     },
 
     '#Magic': {
-      backgroundColor: v.backgroundColor,
-      color: v.textColor,
+      backgroundColor: v.background.dark,
+      color: v.text.dark,
       transition: 'color 300ms, background-color 300ms',
       minHeight: '100vh',
       fontWeight: 400,
 
       '&.light': {
-        backgroundColor: v.backgroundColorLight,
-        color: v.textColorLight,
+        backgroundColor: v.background.light,
+        color: v.text.light,
       },
     },
 
@@ -53,19 +62,19 @@ export default (v = {}) => {
     },
 
     a: {
-      color: v.linkColor,
+      color: v.link.dark,
       textDecoration: 'underline',
       transition: 'color 500ms',
 
       '&:hover': {
-        color: v.linkColorHover,
+        color: v.link.hover.dark,
       },
 
       '.light&&': {
-        color: v.linkColorLight,
+        color: v.link.light,
 
         '&:hover': {
-          color: v.linkColorLightHover,
+          color: v.link.hover.light,
         },
       },
     },
@@ -129,10 +138,10 @@ export default (v = {}) => {
         '&.active': {
           '> a': {
             textDecoration: 'underline',
-            color: v.linkColorHover,
+            color: v.link.hover.dark,
 
             '.light&&': {
-              color: v.linkColorLightHover,
+              color: v.link.hover.light,
             },
           },
           li: {
