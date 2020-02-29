@@ -1,7 +1,8 @@
 ## @magic-themes/docs
 
 the [@magic](https://github.com/magic/core) documentation theme.
-shared between all @magic documentation pages
+
+shared between all @magic documentation pages.
 
 [![NPM version][npm-image]][npm-url]
 [![Linux Build Status][travis-image]][travis-url]
@@ -48,7 +49,7 @@ export default {
 ##### overwrite
 you can overwrite any style in this theme.
 
-create /assets/themes/docs/index.js, any css there will overwrite the theme css
+create /assets/themes/docs/index.mjs, any css there will overwrite the theme css
 
 ```javascript
 export default vars => ({
