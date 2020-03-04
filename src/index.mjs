@@ -3,10 +3,12 @@ export const vars = {
     dark: '#232323',
     light: '#eeeeee',
   },
+
   text: {
     dark: '#cccccc',
     light: '#232323',
   },
+
   link: {
     dark: '#eeeeee',
     light: '#232323',
