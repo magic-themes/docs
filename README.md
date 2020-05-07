@@ -78,5 +78,8 @@ export vars from theme to merge with THEME_VARS before rendering modules.
 ##### 0.0.6
 theme vars are now named according to @magic standard (which is in flux...)
 
-##### 0.0.7 - unreleased
+##### 0.0.7 
+bump required node version to 14.2.0
+
+##### 0.0.8 - unreleased
 ...
