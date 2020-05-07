@@ -37,7 +37,7 @@
     "@magic-modules/pre": "0.0.7",
     "@magic/core": "0.0.71",
     "@magic/format": "0.0.10",
-    "@magic/test": "0.1.46"
+    "@magic/test": "0.1.47"
   },
   "keywords": [
     "magic",
