@@ -1,3 +1,6 @@
+export * as Logo from './Logo.mjs'
+export * as Header from './Header.mjs'
+
 export const vars = {
   background: {
     dark: '#232323',
@@ -17,6 +20,11 @@ export const vars = {
       dark: '#fefefe',
       light: '#232323',
     },
+  },
+
+  widths: {
+    tablet: '500px',
+    laptop: '1024px',
   },
 }
 
@@ -102,18 +110,6 @@ export default (v = {}) => {
       lineHeight: '1.8',
     },
 
-    '.Header': {
-      '.Logo': {
-        img: {
-          margin: '0.3em 0 0',
-        },
-
-        span: {
-          fontSize: '1.1em',
-        },
-      },
-    },
-
     '.Menu': {
       display: 'block',
       float: 'none',
@@ -162,20 +158,7 @@ export default (v = {}) => {
       top: '0.5em',
     },
 
-    '@media screen and (min-width: 1000px)': {
-      '.Header': {
-        width: 'auto',
-        position: 'fixed',
-        float: 'left',
-        maxHeight: '100vh',
-        height: '100vh',
-        overflowY: 'auto',
-        overflowX: 'hidden',
-        scrollbarWidth: 'thin',
-        boxSizing: 'border-box',
-        width: '210px',
-      },
-
+    [`@media screen and (min-width: ${v.widths.laptop})`]: {
       '.Menu': {
         maxWidth: '210px',
         padding: '0 0 2em',
@@ -186,6 +169,7 @@ export default (v = {}) => {
         width: 'calc(100% - 220px)',
         minHeight: '83vh',
       },
+  
       '.Footer': {
         clear: 'both',
       },
