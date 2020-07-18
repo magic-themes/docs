@@ -84,5 +84,11 @@ bump required node version to 14.2.0
 ##### 0.0.8
 update logo
 
-##### 0.0.9 - unreleased
+##### 0.0.9
+update icon css
+
+##### 0.0.10
+fix icon positioning
+
+##### 0.0.11 - unreleased
 ...
