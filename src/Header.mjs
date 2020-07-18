@@ -28,7 +28,7 @@ export const style = vars => ({
     '.Menu': {
       width: 'auto',
       float: 'left',
-    },    
+    },
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
