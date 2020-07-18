@@ -152,10 +152,16 @@ export default (v = {}) => {
     },
 
     '.LightSwitch': {
-      left: 'auto',
+      left: '0.5em',
       position: 'fixed',
-      right: '0.5em',
-      top: '0.5em',
+      bottom: '2.5em',
+    },
+
+    '.Gpdr, .NoSpy': {
+      'svg.icon': {
+        left: '0.5em',
+        bottom: '0.5em',
+      },
     },
 
     [`@media screen and (min-width: ${v.widths.laptop})`]: {
@@ -169,7 +175,7 @@ export default (v = {}) => {
         width: 'calc(100% - 220px)',
         minHeight: '83vh',
       },
-  
+
       '.Footer': {
         clear: 'both',
       },
