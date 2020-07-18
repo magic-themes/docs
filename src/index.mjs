@@ -151,19 +151,6 @@ export default (v = {}) => {
       },
     },
 
-    '.LightSwitch': {
-      left: '0.5em',
-      position: 'fixed',
-      bottom: '2.5em',
-    },
-
-    '.Gpdr, .NoSpy': {
-      'svg.icon': {
-        left: '0.5em',
-        bottom: '0.5em',
-      },
-    },
-
     [`@media screen and (min-width: ${v.widths.laptop})`]: {
       '.Menu': {
         maxWidth: '210px',
