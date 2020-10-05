@@ -90,5 +90,9 @@ update icon css
 ##### 0.0.10
 fix icon positioning
 
-##### 0.0.11 - unreleased
+##### 0.0.11
+* fix missing ) in media query
+* update dependencies
+
+##### 0.0.12 - unreleased
 ...
