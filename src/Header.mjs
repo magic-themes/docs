@@ -24,7 +24,7 @@ export const style = vars => ({
     fontSize: '1.5em',
   },
 
-  [`@media screen and (min-width: ${vars.widths.tablet}`]: {
+  [`@media screen and (min-width: ${vars.widths.tablet})`]: {
     '.Menu': {
       width: 'auto',
       float: 'left',
