@@ -98,4 +98,5 @@ fix icon positioning
 bump required node version to 14.15.4
 
 ##### 0.0.13 - unreleased
+* update dependencies
 ...
