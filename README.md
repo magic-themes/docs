@@ -97,6 +97,9 @@ fix icon positioning
 ##### 0.0.12 
 bump required node version to 14.15.4
 
-##### 0.0.13 - unreleased
+##### 0.0.13
 * update dependencies
+* update Header api for @magic/core 0.0.105
+
+##### 0.0.14 - unreleased
 ...
