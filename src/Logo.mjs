@@ -1,5 +1,5 @@
-export const View = ({ root }) =>
-  Link({ to: root, class: 'Logo' }, [
+export const View = () =>
+  Link({ to: '/', class: 'Logo' }, [
     svg({ viewBox: '0 0 512 444' }, [
       path({ d: 'M512 444L256 0 0 444z', fill: '#663695' }),
       circle({ cx: '256', cy: '294', r: '130', fill: '#fff' }),
