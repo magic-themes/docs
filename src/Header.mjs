@@ -1,16 +1,16 @@
 export const View = (props = {}, children = []) => {
   CHECK_PROPS(props, propTypes, 'Header')
 
-  const { logo, menu, logotext, root, theme, hash, url } = props
+  const { logo, menu, logotext, hash, url } = props
 
   if (!logo && !menu && !logotext) {
     return
   }
 
   return header({ class: 'Header' }, [
-    Logo({ root }),
+    Logo(),
     logotext && p(logotext),
-    menu && Menu({ url, hash, root, menu }),
+    menu && Menu({ url, hash, menu }),
     children,
   ])
 }
@@ -30,21 +30,19 @@ export const style = vars => ({
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
     '.Menu': {
-      width: 'auto',
       float: 'left',
+      width: 'auto',
     },
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
-    width: 'auto',
-    position: 'fixed',
-    float: 'left',
-    maxHeight: '100vh',
+    boxSizing: 'border-box',
     height: '100vh',
+    maxHeight: '100vh',
     overflowY: 'auto',
     overflowX: 'hidden',
+    position: 'fixed',
     scrollbarWidth: 'thin',
-    boxSizing: 'border-box',
     width: '210px',
 
     p: {
