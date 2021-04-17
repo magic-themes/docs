@@ -32,6 +32,10 @@ export default (v = {}) => {
   v = { ...vars, ...v }
 
   return {
+    '*': {
+      boxSizing: 'border-box',
+    },
+
     body: {
       fontFamily: [
         '"Ubuntu Narrow"',
