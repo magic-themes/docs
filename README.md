@@ -104,6 +104,7 @@ bump required node version to 14.15.4
 ##### 0.0.14
 * update dependencies
 * update Header api for @magic/core 0.0.109
+* add box-sizing: border-box to *
 
 ##### 0.0.15 - unreleased
 ...
