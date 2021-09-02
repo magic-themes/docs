@@ -41,3 +41,5 @@ export default vars => ({
 ```
 
 magic will then find and merge the themes automatically, just as it did on this page
+
+<ThemeVars state></ThemeVars>
