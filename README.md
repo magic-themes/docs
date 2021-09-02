@@ -106,5 +106,9 @@ bump required node version to 14.15.4
 * update Header api for @magic/core 0.0.109
 * add box-sizing: border-box to *
 
-##### 0.0.15 - unreleased
+##### 0.0.15 
+* update dependencies
+* add ThemeVars module to example page
+
+##### 0.0.16 - unreleased
 ...
